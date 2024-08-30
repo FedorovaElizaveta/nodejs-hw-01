@@ -10,7 +10,8 @@ export const countContacts = async () => {
     }
 
     const countContacts = contacts.length;
-    return countContacts;
+    const message = `Amount of contacts: ${countContacts}`;
+    return message;
   } catch (err) {
     console.error('Error counting contacts:', err);
   }
